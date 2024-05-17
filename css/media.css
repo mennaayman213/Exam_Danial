@@ -1,0 +1,65 @@
+/* break points */
+
+/* 2000 */
+/* sm */
+@media screen and (min-width:640px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+}
+
+/* //////////////////////////////////////////////////////// */
+/* md */
+@media screen and (min-width:768px) {
+    .home h1 {
+        font-size: 4rem;
+    }
+
+    .slider .carousel-inner {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+/* //////////////////////////////////////////////////////// */
+/* lg */
+@media screen and (min-width:1024px) {
+    .home h1 {
+        font-size: 4.5rem;
+    }
+
+    .link::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        transition: 0.5s;
+    }
+    
+    .nav-item:hover .link::after{
+        width: 80%;
+    }
+
+    .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .nav-item:hover .active {
+        color: #fff !important;
+    }
+    
+    .navbar .deep-dropdown:hover ul {
+       left: -120%;
+       z-index: 100;
+    }
+}
+
+/* //////////////////////////////////////////////////////// */
+/* xl */
+@media screen and (min-width:1280px) {}
+
+/* xxl */
+@media screen and (min-width:1536px) {}
